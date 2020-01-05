@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">LAMMAS 20</string>
+    <string name="department_of_computer_application">Organized by\n PG Department of Computer Application</string>
+    <string name="lammas_2020">LAMMAS 2020</string>
+    <string name="_01_january_2020">01-January-2020</string>
+    <string name="welcome_you_all">WELCOME YOU ALL</string>
+    <string name="events_list">Events list</string>
+    <string name="events_list_bar">Events List</string>
+    <string name="todo">TODO</string>
+    <string name="intra_departmental_cultural_competition">Intra Departmental Cultural Competition</string>
+    <string name="solo_dance">Solo Dance</string>
+    <string name="face_painting">Face Painting</string>
+    <string name="short_film">Short Film</string>
+    <string name="group_dance">Group Dance</string>
+    <string name="mime">Mime</string>
+    <string name="dumb_c">Dumb’C</string>
+    <string name="pair_dance">Pair Dance</string>
+    <string name="light_music">Light Music</string>
+    <string name="street_play">Street Play</string>
+    <string name="art_out_of_waste">Art out of Waste</string>
+    <string name="bride_bridegroom_dressing">Bride / Bridegroom Dressing</string>
+    <string name="pencil_sketch">Pencil sketch</string>
+    <string name="vegetable_carving">Vegetable Carving</string>
+    <string name="photo_shoot">Photo Shoot</string>
+    <string name="pongal">Pongal</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lammas20">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/logo_dis"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".EventList.Event15Activity"></activity>
+        <activity android:name=".EventList.Event14Activity" />
+        <activity android:name=".EventList.Event13Activity" />
+        <activity android:name=".EventList.Event12Activity" />
+        <activity android:name=".EventList.Event11Activity" />
+        <activity android:name=".EventList.Event10Activity" />
+        <activity android:name=".EventList.Event9Activity" />
+        <activity android:name=".EventList.Event8Activity" />
+        <activity android:name=".EventList.Event7Activity" />
+        <activity android:name=".EventList.Event6Activity" />
+        <activity android:name=".EventList.Event5Activity" />
+        <activity android:name=".EventList.Event4Activity" />
+        <activity android:name=".EventList.Event3Activity" />
+        <activity android:name=".EventList.Event2Activity" />
+        <activity android:name=".EventList.Event1Activity" />
+        <activity android:name=".EventListActivity" />
+        <activity android:name=".WelcomeActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
