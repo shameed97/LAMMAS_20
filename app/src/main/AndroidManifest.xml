@@ -9,11 +9,11 @@
         android:icon="@mipmap/logo_dis"
         android:label="@string/app_name"
         android:largeHeap="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo_dis_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".EventList.Event15Activity"></activity>
+        <activity android:name=".EventList.Event15Activity" />
         <activity android:name=".EventList.Event14Activity" />
         <activity android:name=".EventList.Event13Activity" />
         <activity android:name=".EventList.Event12Activity" />

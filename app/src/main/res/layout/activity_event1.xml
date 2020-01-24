@@ -22,7 +22,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
                     android:id="@+id/eventImage"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo" />
 
 
                 <ImageView
@@ -33,7 +34,8 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="20dp"
                     android:src="@drawable/ic_back2"
-                    android:layout_marginStart="20dp" />
+                    android:layout_marginStart="20dp"
+                    android:contentDescription="@string/todo" />
             </FrameLayout>
 
 
@@ -70,7 +72,9 @@
                             android:layout_height="8dp"
                             android:layout_gravity="center"
                             android:layout_marginRight="4dp"
-                            android:src="@drawable/dark_circle_red"/>
+                            android:src="@drawable/dark_circle_red"
+                            android:layout_marginEnd="4dp"
+                            android:contentDescription="@string/todo" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -78,7 +82,7 @@
                             android:textColor="#a0a0a0"
                             android:textSize="17sp"
                             android:layout_marginLeft="7dp"
-                            android:text="Timing"
+                            android:text="@string/timing"
                             android:layout_marginStart="7dp" />
 
                         <ImageView
@@ -87,18 +91,18 @@
                             android:src="@drawable/ic_clock1"
                             android:layout_gravity="center"
                             android:layout_marginLeft="5dp"
-                            android:layout_marginStart="5dp" />
+                            android:layout_marginStart="5dp"
+                            android:contentDescription="@string/todo" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="11 a.m-1 p.m"
+                            android:text="@string/_10_a_m"
                             android:textSize="15sp"
                             android:textColor="@color/black"
                             android:layout_marginLeft="4dp"
                             android:layout_marginStart="4dp" />
                     </LinearLayout>
-
 
 
                 </LinearLayout>
@@ -109,7 +113,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Event Detail"
+                android:text="@string/event_detail"
                 android:textSize="10sp"
                 android:textColor="@color/black"
                 android:layout_marginLeft="12dp"
@@ -123,13 +127,13 @@
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:lineSpacingExtra="2dp"
-                android:text="Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus. Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum"
+                android:text="@string/event_type_solo_event_nvenue_auditorium"
                 android:layout_margin="12dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rules"
+                android:text="@string/rules"
                 android:textSize="13sp"
                 android:textColor="@color/black"
                 android:layout_marginLeft="12dp"
@@ -159,7 +163,7 @@
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:text="1"
+                    android:text="@string/_1"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textColor="@color/white_"
@@ -169,8 +173,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Participates Should wear Id Card"
-                    android:textSize="13dp"
+                    android:text="@string/no_of_participant_1"
+                    android:textSize="13sp"
                     android:layout_marginLeft="15dp"
                     android:layout_gravity="center"
                     android:textColor="#585e66"
@@ -190,7 +194,7 @@
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:text="2"
+                    android:text="@string/_2"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textColor="@color/white_"
@@ -200,8 +204,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Judges Decition is final."
-                    android:textSize="13dp"
+                    android:text="@string/duration_4_to_5_minutes"
+                    android:textSize="13sp"
                     android:layout_gravity="center"
                     android:textColor="#585e66"
                     android:layout_marginLeft="15dp"
@@ -221,7 +225,7 @@
                 <TextView
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:text="3"
+                    android:text="@string/_3"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:textColor="@color/white_"
@@ -231,8 +235,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3 Prizes will be given"
-                    android:textSize="13dp"
+                    android:text="@string/participant_should_bring_all_the_essentials"
+                    android:textSize="13sp"
                     android:layout_marginLeft="15dp"
                     android:layout_gravity="center"
                     android:textColor="#585e66"
@@ -240,67 +244,38 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginRight="12dp"
+                            android:orientation="horizontal">
 
 
-                <TextView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:text="4"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textColor="@color/white_"
-                    android:background="@drawable/dark_circle_grey"/>
+                            <TextView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:text="@string/_4"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:textColor="@color/white_"
+                                android:background="@drawable/dark_circle_grey"/>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Rajesh love many girls"
-                    android:textSize="13dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_gravity="center"
-                    android:textColor="#585e66"
-                    android:layout_marginStart="15dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/any_songs"
+                                android:textSize="13sp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_gravity="center"
+                                android:textColor="#585e66"
+                                android:layout_marginStart="15dp" />
 
 
-            </LinearLayout>
+                        </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:orientation="horizontal">
-
-
-                <TextView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:text="5"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:textColor="@color/white_"
-                    android:background="@drawable/dark_circle_yelow"/>
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Deiifrence between hashmap and hash table"
-                    android:textSize="13dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_gravity="center"
-                    android:textColor="#585e66"
-                    android:layout_marginStart="15dp" />
-            </LinearLayout>
                     </LinearLayout>
                 </ScrollView>
         </LinearLayout>

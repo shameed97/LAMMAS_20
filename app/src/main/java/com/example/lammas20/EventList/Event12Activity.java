@@ -21,7 +21,7 @@ public class Event12Activity extends AppCompatActivity {
 
         imageView = findViewById(R.id.backArrow);
         imageView1 = findViewById(R.id.eventImage);
-        imageView1.setBackgroundResource(R.drawable.dumb);
+        imageView1.setBackgroundResource(R.drawable.yes);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

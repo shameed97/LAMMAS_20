@@ -29,7 +29,7 @@ public class EventListActivity extends AppCompatActivity {
 
     private ListView listView;
     private String[] eventName = {"1.Solo Dance", "2.Face Painting", "3.Art out of Waste", "4.Bride / Bridegroom Dressing", "5.Pencil sketch ",
-            "6.Vegetable Carving", "7.Photo Shoot", "8.Pongal ", "9.Short Film", "10.Group Dance", "11.Mime", "12.Dumb’C", "13.Pair Dance"
+            "6.Vegetable Carving", "7.Photo Shoot", "8.Pongal ", "9.Short Film", "10.Group Dance", "11.Mime", "12.Tin Tarento", "13.Pair Dance"
             , "14.Light Music", "15.Street Play"};
 
     @Override
