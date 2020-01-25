@@ -1,8 +1,13 @@
 package com.example.lammas20;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -38,7 +43,7 @@ public class EventListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_event_list);
 
         listView = findViewById(R.id.listView);
-
+        setAnimation();
         final ArrayAdapter<String> listViewAdapter = new ArrayAdapter<>(this, R.layout.event_list, R.id.event, eventName);
         listView.setAdapter(listViewAdapter);
 
@@ -106,4 +111,23 @@ public class EventListActivity extends AppCompatActivity {
         });
 
     }
+
+    private void setAnimation() {
+        ObjectAnimator scaleXAnimation = ObjectAnimator.ofFloat(findViewById(R.id.listView), "scaleX", 5.0F, 1.0F);
+        scaleXAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
+        scaleXAnimation.setDuration(2000);
+        ObjectAnimator scaleYAnimation = ObjectAnimator.ofFloat(findViewById(R.id.listView), "scaleY", 5.0F, 1.0F);
+        scaleYAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
+        scaleYAnimation.setDuration(2000);
+        ObjectAnimator alphaAnimation = ObjectAnimator.ofFloat(findViewById(R.id.listView), "alpha", 0.0F, 1.0F);
+        alphaAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
+        alphaAnimation.setDuration(2000);
+        AnimatorSet animatorSet = new AnimatorSet();
+        animatorSet.play(scaleXAnimation).with(scaleYAnimation).with(alphaAnimation);
+        animatorSet.start();
+        findViewById(R.id.listView).setAlpha(1.0F);
+        Animation anim = AnimationUtils.loadAnimation(this, R.anim.move);
+        findViewById(R.id.listView).startAnimation(anim);
+    }
+
 }

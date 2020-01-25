@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">LAMMAS 20</string>
-    <string name="department_of_computer_application">Organized by\n PG Department of Computer Application</string>
-    <string name="lammas_2020">LAMMAS "'"2020</string>
+    <string name="department_of_computer_application">Organized by\n PG Department of Computer Applications</string>
+    <string name="lammas_2020">LAMMAS "'"20</string>
     <string name="_01_january_2020">06&amp;07-February-2020</string>
     <string name="welcome_you_all">WELCOME YOU ALL</string>
     <string name="events_list">Events list</string>

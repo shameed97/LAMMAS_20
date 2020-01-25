@@ -30,4 +30,10 @@ public class Event13Activity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(Event13Activity.this, EventListActivity.class));
+        finish();
+        super.onBackPressed();
+    }
 }
